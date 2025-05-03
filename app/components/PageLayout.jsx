@@ -9,6 +9,7 @@ import {
   SearchFormPredictive,
 } from '~/components/SearchFormPredictive';
 import {SearchResultsPredictive} from '~/components/SearchResultsPredictive';
+import AnnouncmentBar from './Announcmentbar';
 
 /**
  * @param {PageLayoutProps}
@@ -26,8 +27,9 @@ export function PageLayout({
       <CartAside cart={cart} />
       <SearchAside />
       <MobileMenuAside header={header} publicStoreDomain={publicStoreDomain} />
+      <AnnouncmentBar/>
       {header && (
-        <Header
+         <Header
           header={header}
           cart={cart}
           isLoggedIn={isLoggedIn}

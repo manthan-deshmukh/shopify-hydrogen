@@ -520,3 +520,36 @@ button.reset:hover:not(:has(> *)) {
 .account-logout {
   display: inline-block;
 }
+
+.announment-main {
+  background-color: #f59e0b ;
+  padding-top: 0.75rem; 
+  padding-bottom: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.announcment-content {
+  max-width: 1280px;        
+  margin-left: auto;        
+  margin-right: auto;
+  display: flex;          
+  justify-content: center;  
+  align-items: center;
+}
+
+.announcment-message {
+  .custom-text {
+    color: #ffffff; 
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    transition: opacity 0.5s ease;  
+  }
+  
+    @media (min-width: 768px) {
+    .custom-text {
+      font-size: 1rem;                
+    }
+  }
+}
